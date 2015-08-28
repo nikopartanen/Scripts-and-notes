@@ -1,0 +1,13 @@
+## Create a new folder for the files and move them there. This is very convenient i.e. when one gets a large number of files with no folder structure but right names for each file.
+
+ls | sed 's/.wav//g' | xargs mkdir ;
+#!/bin/bash
+for file in `ls`
+do
+        SESSIONNAME=$(echo $file | sed 's/.wav//g')
+        MOVFILE="$file"
+        MOVDESTINATION="./$SESSIONNAME/$file"
+
+        # moving the file
+        /bin/mv $MOVFILE $MOVDESTINATION;
+done

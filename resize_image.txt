@@ -1,0 +1,7 @@
+## Just to keep in mind how to batch resize images with ImageMagick. Same pattern of course works with other tools.
+
+for img in `ls *.JPG`
+do
+  convert -sample 10%x10% $img smaller$img.png
+done
+
