@@ -11,3 +11,11 @@ do
         # moving the file
         /bin/mv $MOVFILE $MOVDESTINATION;
 done
+
+
+## This was a good way to make new folders with numbering
+## In some situations model like 001-099 would be better, but it doesn't really matter in this case
+
+for num in {1..100}; do
+    mkdir koi19640000redei-$num
+done
