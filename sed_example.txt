@@ -1,0 +1,10 @@
+# The idea in this command is that there is another file from which
+# the patterns are read. In this example it is called "replace.sed".
+# It must have the stucture like this:
+
+s/a/b/g
+s/c/d/g
+
+# This command runs it and does the changes in place.
+
+sed -i '' -f ../replace.sed example.txt
