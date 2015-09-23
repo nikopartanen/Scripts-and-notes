@@ -1,0 +1,7 @@
+# Idea in these commands is that first we convert all wav files to mp3,
+# after which the names are changes, as the first command results in
+# .wav.mp3 format in the names. It wouldn't be so difficult to have them
+# in one command either, I guess, but this feels easy to remember for now.
+
+for file in `ls *.WAV`; do sox $file $file.mp3; done
+for f in *.wav.mp3; do mv "$f" "${f/.wav./.}"; done
