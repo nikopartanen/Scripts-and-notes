@@ -1,0 +1,7 @@
+# Idea here is to batch convert pdf files into high quality jpg's
+
+for pdf in `ls *.pdf`
+do
+  jpg=$(echo $pdf | sed 's/pdf/jpg/g')
+  convert -density 300 -trim $pdf -quality 100 $jpg
+done
