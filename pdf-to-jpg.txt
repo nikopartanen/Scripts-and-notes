@@ -8,6 +8,6 @@ done
 
 # This does the same turning one pdf into individual high quality images
 
-convert -density 300 -trim file.pdf -quality 100 file/file.png
+convert -density 300 -trim file.pdf -quality 100 file/file-%3d.png
 
-# one can control with the file name whether the output is jpg or png or whatever. would be nice to know what is the easiest way to change the page numbering into 001, 002 etc, as it is now file-1.png and so on.
+# one can control with the file name whether the output is jpg or png or whatever. Now the numbering is automatically 001, 002, 003 etc.
