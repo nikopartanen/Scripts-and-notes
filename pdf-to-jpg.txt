@@ -1,7 +1,13 @@
-# Idea here is to batch convert pdf files into high quality jpg's
+# Idea here is to batch convert pdf files into high quality images
 
 for pdf in `ls *.pdf`
 do
-  jpg=$(echo $pdf | sed 's/pdf/jpg/g')
-  convert -density 300 -trim $pdf -quality 100 $jpg
+  png=$(echo $pdf | sed 's/pdf/png/g')
+  convert -density 300 -trim $pdf -quality 100 $png
 done
+
+# This does the same turning one pdf into individual high quality images
+
+convert -density 300 -trim file.pdf -quality 100 file/file.png
+
+# one can control with the file name whether the output is jpg or png or whatever. would be nice to know what is the easiest way to change the page numbering into 001, 002 etc, as it is now file-1.png and so on.
