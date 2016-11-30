@@ -1,0 +1,6 @@
+# works at least on Linux
+# finds all files recursively with the extension
+# and moves them to a directory
+
+mkdir whatever
+find . -name \*.eaf -exec cp {} whatever \;
