@@ -1,0 +1,9 @@
+# This can be used to add some padding
+# please notice it overwrites it run like this
+
+convert img/avatar-icon.png -bordercolor White -border 10%x10% img/avatar-icon.png
+
+# This first removes the black border from the image and adds little bit of white padding afterwards
+
+convert img/avatar-icon.png -fuzz 80% -trim img/image_out.png
+convert img/image_out.png -bordercolor White -border 10%x10% img/avatar-icon-new.png
