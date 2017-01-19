@@ -1,0 +1,3 @@
+M-x toggle-truncate-lines
+M-x scroll-all-mode
+M-x global-hl-line-mode
