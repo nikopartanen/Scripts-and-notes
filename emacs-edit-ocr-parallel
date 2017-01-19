@@ -1,0 +1,23 @@
+M-x toggle-truncate-lines
+M-x scroll-all-mode
+M-x global-hl-line-mode
+M-x highlight-regexp RET <REGEXP>
+
+It is easy to get regex highlighting disabled with:
+
+M-x unhighlight-regexp or M-s h u
+
+Whenever things go off sync it is good to use:
+
+M-x scroll-up-line
+M-x scroll-down-line
+
+Or another option is to select line you want to have the first and do in both buffers:
+
+M 0 Ctrl-L
+
+Or:
+
+M 4 M-x scroll-up-line
+
+And so on.
