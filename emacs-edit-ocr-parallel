@@ -21,3 +21,11 @@ Or:
 M 4 M-x scroll-up-line
 
 And so on.
+
+One good way to set it to scroll one line at time is:
+
+M-: (set-variable ‘scroll-step 1)
+
+A convenient way to insert tabs is:
+
+C-q <tab>
