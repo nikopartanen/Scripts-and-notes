@@ -1,0 +1,6 @@
+# This command returns a frequency list of the terms copied from the InDesign document.
+# based on answer here: http://stackoverflow.com/questions/10552803/how-to-create-a-frequency-list-of-every-word-in-a-file
+# Doesn't really work so well, one would need to export from InDesign into some other format first.
+# Still, it may help to spot some mistyped words in the low frequency end of the list.
+
+tr '[:upper:]' '[:lower:]' < dohtranruad.txt | tr -d ",.?:()~<>=/&;" | tr -d '\r' | tr -s ' ' '\n' | sort | uniq -c | sort -nr | less
