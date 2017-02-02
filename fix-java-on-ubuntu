@@ -1,0 +1,7 @@
+This is not the most sophisticated thing on this planet, but for some reason I couldn't get ELAN work on Ubuntu, but the whole installation just came crashing down with some Java related errors.
+So what I ended up doing was something like this:
+
+    sudo apt-get install default-jdk
+    sudo update-alternatives --install "/usr/bin/java" "java" "/usr/lib/jvm/java-" 1
+
+After which `which java` returned something normal.
