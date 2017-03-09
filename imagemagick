@@ -7,3 +7,7 @@ convert img/avatar-icon.png -bordercolor White -border 10%x10% img/avatar-icon.p
 
 convert img/avatar-icon.png -fuzz 80% -trim img/image_out.png
 convert img/image_out.png -bordercolor White -border 10%x10% img/avatar-icon-new.png
+
+# This converts all files in a given folder to other format:
+
+mogrify -format png *.jpg
