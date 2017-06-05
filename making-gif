@@ -1,0 +1,1 @@
+convert -delay 35 -loop 0 path/to/source/folder/pattern*.jpg animation.gif
