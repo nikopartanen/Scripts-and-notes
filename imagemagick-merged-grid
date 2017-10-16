@@ -1,0 +1,3 @@
+# This merges two images into a nice grid
+
+montage Page_016.png Page_017.png  -tile 2x1 -geometry +0+0 out.png
