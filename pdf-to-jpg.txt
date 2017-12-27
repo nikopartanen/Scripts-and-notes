@@ -11,3 +11,8 @@ done
 convert -density 300 -trim file.pdf -quality 100 file/file-%3d.png
 
 # one can control with the file name whether the output is jpg or png or whatever. Now the numbering is automatically 001, 002, 003 etc.
+
+# This is a good way to transform files in batch
+# Found from here: http://rafaelsteil.com/converting-multiple-pdf-files-into-jpg-using-imagemagick/
+
+mogrify -format jpg -alpha off -density 150 -quality 80 -resize 768 -unsharp 1.5 *.pdf
