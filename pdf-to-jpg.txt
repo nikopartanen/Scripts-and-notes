@@ -8,7 +8,7 @@ done
 
 # This does the same turning one pdf into individual high quality images
 
-convert -density 300 -trim file.pdf -quality 100 file/file-%3d.png
+convert -density 300 -trim file.pdf -quality 100 file/file-%03d.png
 
 # one can control with the file name whether the output is jpg or png or whatever. Now the numbering is automatically 001, 002, 003 etc.
 
