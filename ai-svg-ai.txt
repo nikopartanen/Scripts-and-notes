@@ -1,0 +1,8 @@
+# At times one needs to edit color of an AI file with Illustrator. This worked for me:
+
+```
+inkscape -f file.ai -l file.svg
+# Manual editing of svg xml, i.e. changing the color attribute
+inkscape file.svg -A file-temp.pdf
+mv file-temp.pdf file-new.ai
+```
