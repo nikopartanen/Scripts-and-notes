@@ -8,3 +8,4 @@ Then we use Git to revert those files into a previous stage using the commit has
 
     git checkout abc123 -- path/to/file1.eaf path/to/file2.eaf
 
+The biggest benefit of using ELAN's internal tool is that it leaves really clear diff in version control, which really allows spotting when something goes wrong. Programmatically this can be challenging, as it is far from trivial to format XML so that it just is the same. Of course one can also use some XML aware diff tools, but this is an easy solution.
