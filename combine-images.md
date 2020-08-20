@@ -23,7 +23,7 @@ convert result.jpg -resize 2856x1610 -background white -gravity center -extent 2
 #convert features.jpg -resize 2384x1415 -background white -gravity center -extent 2404x1435 features-with_pad.jpg
 #convert result.jpg -resize 2384x1415 -background white -gravity center -extent 2404x1435 result-with_pad.jpg
 
-convert \( features-with_pad.jpg result-with_pad.jpg +append \) igushev_collage.jpg
+convert \( features-with_pad.jpg result-with_pad.jpg +append \) collage.jpg
 
 convert collage.jpg -resize 4734x1398 -background white -gravity center -extent 4764x1428 collage-with_pad.jpg
 
